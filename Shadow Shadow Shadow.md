@@ -2,31 +2,31 @@ This was an interesting challenge, but also one that was a little easier than we
 
 ![[image-28.png|647x109]](ShadowShadowShadow/image-28.png)
 
-Once the string above is decoded into base64, it suggests that part of the entire string is able to be decoded, as using the entire string doesn't lead us anywhere. 
+Once the entire string above is decoded from base64, it suggests that only part of the entire string is able to be decoded, as using the entire string doesn't lead us anywhere. 
 ![[image-29.png|609x286]](ShadowShadowShadow/image-29.png)
 
 Once we tried this method, we got the following string from base64 decoding: ``YzI5dFluSmg=``:
 ![[image-30.png|197x249]](ShadowShadowShadow/image-30.png)
 
-Decoding this into base64 will produce an interesting result, sombra
+Decoding this again from base64 will produce an interesting result, sombra
 ![[image-31.png|196x303]](ShadowShadowShadow/image-31.png)
 
 Upon a quick Google search, sombra is a word that roughly translates to "shadow" from Spanish to English. This fits the theme of this challenge, where the word shadow is repeated. 
 ![[image-32.png|382x278]](ShadowShadowShadow/image-32.png)
 
-As for the rest of the string given, this looks like this is encoded with something like a vigenere cipher, as the text file mentions this encoding technique in its hint. 
+As for the rest of the string given, both sections looked like they were encoded with something like a vigenere cipher, as the text file mentions this encoding technique in its hint. 
 
 It is also likely that each of the individual strings in the first line represent a different word, as the challenge name itself also has 3 words (that being "shadow shadow shadow") to represent this.
 
 ![[image-34.png|395x112]](ShadowShadowShadow/image-34.png)
 
-Upon decoding the first part of the text ``xpeud`` with a brute-force caesar cipher decoder, we could figure out that one of the following texts represents a decipherable word, umbra.  
+Upon decoding the first part of the text ``xpeud`` with a brute-force caesar cipher decoder instead of a vigenere, we could figure out that one of the following texts represents a decipherable word, umbra.  
 
 ![[image-33.png|112x377]](ShadowShadowShadow/image-33.png)
 
 It turns out that the word umbra is used to represent the darkest part of a shadow, relating to the prompt of the challenge (We swear we did not think of Bayonetta).  
 
-Now, this leaves us to work with ``vhrnrw`` as the final string of characters to decode. As the hint mentions vigenere cipher (although spelt incorrectly), this string will likely need to be decoded using this method.
+Now, this leaves us to work with ``vhrnrw`` as the final string of characters to decode. As the hint mentions a vigenere cipher (although spelt incorrectly), this string will likely need to be decoded using this method.
 
 Upon trying to automatically decrypt this string without any mention of a key, this search does not lead us to anything related to the information of the challenge. 
 
