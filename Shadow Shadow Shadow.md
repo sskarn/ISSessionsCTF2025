@@ -1,3 +1,5 @@
+# ISSessions CTF 2025 - "shadow shadow shadow" Writeup
+
 This was a fun challenge! The more time our team spent on it, the easier it got!
 
 ![[image-28.png|647x109]](ShadowShadowShadow/image-28.png)
