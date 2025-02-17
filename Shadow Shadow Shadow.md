@@ -19,6 +19,7 @@ As for the rest of the string given, this looks like this is encoded with someth
 It is also likely that each of the individual strings in the first line represent a different word, as the challenge name itself also has 3 words (that being "shadow shadow shadow") to represent this.
 
 ![[image-34.png|395x112]](ShadowShadowShadow/image-34.png)
+
 Upon decoding the first part of the text ``xpeud`` with a brute-force caesar cipher decoder, we could figure out that one of the following texts represents a decipherable word, umbra.  
 
 ![[image-33.png|112x377]](ShadowShadowShadow/image-33.png)
